@@ -316,7 +316,7 @@ export default function Home() {
               <h4>Premium Consultation (3 Hours + Reports): ₦250,000</h4>
               
               <ul>
-                <li>In-depth audit of your business's branding, advertising, and web presence.</li>                
+                <li>In-depth audit of your business&apos;s branding, advertising, and web presence.</li>                
               </ul>
             </div>
           </div>
