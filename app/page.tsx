@@ -152,8 +152,6 @@ export default function Home() {
                 height: '40px',
                 objectFit: 'contain',
                 objectPosition: 'center',
-                background: '#fff',
-                borderRadius: '16px',
               }}
             />
           ))}
