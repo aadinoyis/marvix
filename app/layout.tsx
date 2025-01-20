@@ -23,6 +23,22 @@ const metal = Metal({
 export const metadata: Metadata = {
   title: "Marvix Digital Agency",
   description: "Transforming Ideas into Digital Excellence.",
+  openGraph: {
+    title: "Marvix Digital Agency",
+    description: "Transforming Ideas into Digital Excellence.",
+    url: "https://marvix.vercel.app/",
+    images: [
+      {
+        url: "/favicon/android-chrome-192x192.png",
+        secureUrl: "/favicon/android-chrome-192x192.png",
+        width: 1200,
+        height: 630,
+        alt: "Preview Image for Marvix Digital Agency"
+      }
+    ],
+    type: "website",
+    siteName: "Marvix Digital Agency"
+  }
 };
 
 export default function RootLayout({
