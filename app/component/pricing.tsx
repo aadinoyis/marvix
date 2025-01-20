@@ -1,4 +1,5 @@
 import styles from "@/app/page.module.css"
+import Image from "next/image";
 
 type PackageDetails = {
   packageName: string;
@@ -24,6 +25,15 @@ export default function Pricing({ service, id }: Props) {
   return (
     <div className={styles.package} id="pricing">
       <div className={styles.package_title}>
+        <div className={styles.icon}>
+          <Image
+            aria-hidden
+            src="/globe-pointer.svg"
+            alt="Globe icon"
+            width={16}
+            height={16}
+          />
+        </div>
         <h3>{service.title}</h3>
       </div>
       <div className={styles.package_wrapper}>
@@ -37,7 +47,16 @@ export default function Pricing({ service, id }: Props) {
               </h4>
               <ul>
                 {details.details.map((detail, index) => (
-                  <li key={index}>{detail}</li>
+                  <li key={index}>
+                    <Image
+                      aria-hidden
+                      src="/check-circle.svg"
+                      alt="Check icon"
+                      width={16}
+                      height={16}
+                    />
+                    {detail}
+                  </li>
                 ))}
               </ul>
             </div>

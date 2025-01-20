@@ -1,5 +1,4 @@
 :root {
-  --background: #f7f6f0;
   --background: #f0f1f7;
   --foreground: #171717;
 
@@ -9,9 +8,11 @@
 
   --heading-size: clamp(48px, 5vw, 64px);
 
-
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
+
+  --primary-color: rgb(38, 125, 255);
+  --secondary-color: rgb(243, 186, 79);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -28,12 +29,15 @@
   }
 } */
 
-html,
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 40px;
+  overflow-y: scroll;
+}
+
 body {
   max-width: 100vw;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding: 4rem;
+  height: auto;
 }
 
 body {
@@ -43,7 +47,6 @@ body {
   line-height: 1.5;
   letter-spacing: .25px;
   position: relative;
-  overflow: hidden;
 }
 
 * {
@@ -70,12 +73,13 @@ img {
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+    scroll-padding: 40px;
   }
 }
 
-:target {
-  scroll-margin: 0rem;
-}
+/* :target {
+  scroll-margin: 2rem;
+} */
 
 h1 {
   font-size: var(--heading-size);
@@ -86,6 +90,7 @@ h1 {
 
 h3 {
   font-weight: 600;
+  line-height: 1;
 }
 
 em {
@@ -94,25 +99,28 @@ em {
 }
 
 
-/* body::before {
-  font-size: 25vw;
-  position: absolute;
-  content: 'MARVIX';
-  top: 0;
-  left: 0;
-  font-weight: 900;
-  color: rgba(148, 158, 168, 0.2);
-  z-index: -1;
-  line-height: 1;
-} */
-body::after {
+body::before {
   font-size: 25vw;
   position: absolute;
   content: 'MARVIX';
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   font-weight: 900;
   color: rgba(148, 158, 168, 0.2);
   z-index: -1;
   line-height: 1;
 }
+body::after {
+  font-size: 20vw;
+  position: absolute;
+  content: 'MARVIX';
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 900;
+  color: var(--primary-color);
+  z-index: -1;
+  line-height: 1;
+}
+
