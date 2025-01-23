@@ -10,7 +10,7 @@ const brands = [
   'nylamart.png',
   'obasplace.png',
   'opjhomes.png',
-  'skynet.png',
+  'abc.png',
   'skyshop.png'
 ]
 
@@ -182,7 +182,7 @@ export default function Home() {
                     width: 'auto',
                     height: '60px',
                     objectFit: 'contain',
-                    objectPosition: '5% center',
+                    objectPosition: 'center',
                   }}
                 />
               </div>
@@ -330,9 +330,27 @@ export default function Home() {
 
         <div className={styles.package_wrapper}>          
           <div className={styles.package_division}>
-            <p>
-              **We offer personalized packages for unique projects with a 50% upfront payment and 50% upon completion (or monthly subscriptions for ongoing services).
-            We also give 10% off for referrals as a referral discount.
+            <p style={{
+              display: 'flex',
+              gap: '8px',
+            }}>
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                style={{
+                  opacity: '0.8',
+                  marginTop: '4px',
+                  fill: 'grey',
+                }}
+              >
+                <path d="M12 0a12 12 0 1 0 12 12A12.013 12.013 0 0 0 12 0m0 21a9 9 0 1 1 9-9 9.01 9.01 0 0 1-9 9"></path>
+                <path d="M11.545 9.545h-.3a1.577 1.577 0 0 0-1.605 1.393A1.5 1.5 0 0 0 11 12.532v4.65a1.5 1.5 0 0 0 3 0V12a2.455 2.455 0 0 0-2.455-2.455M11.83 8.466a1.716 1.716 0 1 0-1.716-1.716 1.715 1.715 0 0 0 1.716 1.716"></path>
+              </svg>
+              We offer personalized packages for unique projects with a 50% upfront payment and 50% upon completion (or monthly subscriptions for ongoing services).
+              We also give 10% off for referrals as a referral discount.
             </p>
           </div>
         </div>
