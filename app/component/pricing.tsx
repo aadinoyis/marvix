@@ -17,18 +17,19 @@ type ServiceCategory = {
 };
 
 type Props = {
+  icon: string;
   service: ServiceCategory;
   id: string;
 }
 
-export default function Pricing({ service, id }: Props) {
+export default function Pricing({ icon, service, id }: Props) {
   return (
     <div className={styles.package} id="pricing">
       <div className={styles.package_title}>
         <div className={styles.icon}>
           <Image
             aria-hidden
-            src="/globe-pointer.svg"
+            src={icon}
             alt="Globe icon"
             width={16}
             height={16}

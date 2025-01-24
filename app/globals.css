@@ -95,12 +95,27 @@ h3 {
 
 em {
   font-family: var(--font-metal);
-  font-style: normal;
+  font-style: oblique;
+  position: relative;
+}
+
+em::after {
+  content: '';
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 110%;
+  height: 40px;
+  border-bottom: 3px solid orange;
+  border-right: 3px solid orange;
+  border-radius: 50%;
+  transform: rotate(-8deg);
+  z-index: -1;
 }
 
 
 body::before {
-  font-size: 25vw;
+  font-size: 20vw;
   position: absolute;
   content: 'MARVIX';
   bottom: 0;
@@ -110,6 +125,8 @@ body::before {
   color: rgba(148, 158, 168, 0.2);
   z-index: -1;
   line-height: 1;
+  /* color: #fff; */
+  text-shadow: 0 0 2px var(--secondary-color);
 }
 body::after {
   font-size: 20vw;

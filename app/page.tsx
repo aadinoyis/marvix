@@ -68,27 +68,32 @@ const solutions = [
   {
     title: "Content Creation & Strategy",
     content: "At Marvix Digital Agency, we craft compelling content that resonates with your audience. Whether it's through thought-leadership blogs, engaging content, or high-converting copy, we deliver the content that drives results.",
-    cta: "#content_creation",
+    cta: "https://wa.me/23491014150476",
+    img: "/signature.svg",
   },
   {
     title: "Branding & Graphic Design",
     content: "Your brand identity is more than just a logo. It’s the voice, personality, and trust that connects you with your customers. Let us help you define your brand with a stunning visual identity.",
-    cta: "#branding_graphics_design",
+    cta: "https://wa.me/23491014150476",
+    img: "/layers.svg",
   },
   {
     title: "Email Marketing & Automation",
     content: "Engage your audience with personalized email campaigns that drive action. From nurturing leads to retaining customers, we ensure your emails are impactful and effective.",
-    cta: "#email_marketing_automation",
+    cta: "https://wa.me/23491014150476",
+    img: "/at.svg",
   },
   {
     title: "Pay-Per-Click Advertising",
     content: "Reach your ideal customers with laser-focused PPC campaigns. Whether you’re promoting a new product or growing your brand, our ads deliver measurable results that align with your goals.",
-    cta: "#ppc_advertising",
+    cta: "https://wa.me/23491014150476",
+    img: "/megaphone.svg"
   },
   {
     title: "Web Design & Development",
     content: "Your website is the first impression customers have of your business. We design and develop responsive, visually appealing websites that deliver great user experiences and drive conversions.",
-    cta: "#web_design_development",
+    cta: "https://wa.me/23491014150476",
+    img: "/code-editing.svg",
   },
 ]
 
@@ -110,10 +115,10 @@ export default function Home() {
 
           <div className={styles.ctas}>
             <a
-              href="mailto:Marvixdigital@gmail.com"
+              href="https://wa.me/23491014150476"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.primary}
+              className={styles.secondary}
             >
               <Image
                 aria-hidden
@@ -126,7 +131,7 @@ export default function Home() {
             </a>
             <a
               href="#services"
-              className={styles.secondary}
+              className={styles.primary}
             >
               <Image
                 aria-hidden
@@ -205,10 +210,10 @@ export default function Home() {
 
               <div className={styles.ctas}>
                 <a
-                  href="mailto:Marvixdigital@gmail.com"
+                  href="https://wa.me/23491014150476"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.primary}
+                  className={styles.secondary}
                 >
                   <Image
                     aria-hidden
@@ -221,7 +226,7 @@ export default function Home() {
                 </a>
                 <a
                   href="#packages"
-                  className={styles.secondary}
+                  className={styles.primary}
                 >
                   <Image
                     aria-hidden
@@ -263,7 +268,7 @@ export default function Home() {
                 <div className={styles.icon}>
                     <Image
                       aria-hidden
-                      src="/globe-pointer.svg"
+                      src={solution.img}
                       alt="Globe icon"
                       width={16}
                       height={16}
@@ -285,7 +290,7 @@ export default function Home() {
                     width={16}
                     height={16}
                   />
-                  Learn More
+                  Get started
                 </a>
               </div>
             ))
@@ -319,12 +324,12 @@ export default function Home() {
           <h1>Pick a <em>Package</em> and go for it</h1>
           <br /><br />
           <div className={styles.all_packages}>
-            <Pricing service={services.brandingGraphicsDesign} id="branding_graphics_design"/>
-            <Pricing service={services.contentCreation} id="content_creation"/>
-            <Pricing service={services.emailMarketingAutomation} id="email_marketing_automation"/>
-            <Pricing service={services.ppcAdvertising} id="ppc_advertising"/>
-            <Pricing service={services.webDesignDevelopment} id="web_design_development"/>
-            <Pricing service={services.discountsBundles} id="discounts"/>
+            <Pricing icon="/signature.svg" service={services.contentCreation} id="content_creation"/>
+            <Pricing icon="/layers.svg" service={services.brandingGraphicsDesign} id="branding_graphics_design"/>
+            <Pricing icon="/at.svg" service={services.emailMarketingAutomation} id="email_marketing_automation"/>
+            <Pricing icon="/megaphone.svg" service={services.ppcAdvertising} id="ppc_advertising"/>
+            <Pricing icon="/code-editing.svg" service={services.webDesignDevelopment} id="web_design_development"/>
+            <Pricing icon="/percentage.svg" service={services.discountsBundles} id="discounts"/>
           </div>
         </div>
 
@@ -419,7 +424,7 @@ export default function Home() {
           <div className={styles.ctas}>
             
             <a
-              href="mailto:Marvixdigital@gmail.com"
+              href="https://wa.me/23491014150476"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.primary}
@@ -473,10 +478,10 @@ export default function Home() {
 
               <div className={styles.ctas}>
                 <a
-                  href="mailto:Marvixdigital@gmail.com"
+                  href="https://wa.me/23491014150476"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.primary}
+                  className={styles.secondary}
                 >
                   <Image
                     aria-hidden
@@ -489,7 +494,7 @@ export default function Home() {
                 </a>
                 <a
                   href="#packages"
-                  className={styles.secondary}
+                  className={styles.primary}
                 >
                   <Image
                     aria-hidden
@@ -524,14 +529,72 @@ export default function Home() {
             }
           </div>
           <div>
-            <h3>4.9/5 ⭐⭐⭐⭐⭐</h3>
+            <h3 style={{display: 'flex', gap: '.5rem'}}>4.9/5 
+              <figure style={{display: 'flex', gap: '.5rem'}}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  width="16"
+                  height="16"
+                  data-name="Layer 1"
+                  viewBox="0 0 24 24"
+                  fill="orange"
+                >
+                  <path d="M19.467 23.316 12 17.828l-7.467 5.488L7.4 14.453-.063 9h9.214L12 .122 14.849 9h9.213L16.6 14.453Z"></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  width="16"
+                  height="16"
+                  data-name="Layer 1"
+                  viewBox="0 0 24 24"
+                  fill="orange"
+                >
+                  <path d="M19.467 23.316 12 17.828l-7.467 5.488L7.4 14.453-.063 9h9.214L12 .122 14.849 9h9.213L16.6 14.453Z"></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  width="16"
+                  height="16"
+                  data-name="Layer 1"
+                  viewBox="0 0 24 24"
+                  fill="orange"
+                >
+                  <path d="M19.467 23.316 12 17.828l-7.467 5.488L7.4 14.453-.063 9h9.214L12 .122 14.849 9h9.213L16.6 14.453Z"></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  width="16"
+                  height="16"
+                  data-name="Layer 1"
+                  viewBox="0 0 24 24"
+                  fill="orange"
+                >
+                  <path d="M19.467 23.316 12 17.828l-7.467 5.488L7.4 14.453-.063 9h9.214L12 .122 14.849 9h9.213L16.6 14.453Z"></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  width="16"
+                  height="16"
+                  data-name="Layer 1"
+                  viewBox="0 0 24 24"
+                  fill="orange"
+                >
+                  <path d="M19.467 23.316 12 17.828l-7.467 5.488L7.4 14.453-.063 9h9.214L12 .122 14.849 9h9.213L16.6 14.453Z"></path>
+                </svg>
+              </figure>
+            </h3>
 
             <div className={styles.ctas}>
               <a
-                href="mailto:Marvixdigital@gmail.com"
+                href="https://wa.me/23491014150476"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.primary}
+                className={styles.secondary}
               >
                 <Image
                   aria-hidden
@@ -544,7 +607,7 @@ export default function Home() {
               </a>
               <a
                 href="#contact"
-                className={styles.secondary}
+                className={styles.primary}
               >
                 <Image
                   aria-hidden
@@ -600,7 +663,7 @@ export default function Home() {
               <br />
 
               <a
-                href="mailto:Marvixdigital@gmail.com"
+                href="https://wa.me/23491014150476"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.secondary}
@@ -612,7 +675,7 @@ export default function Home() {
                   width={16}
                   height={16}
                 />
-                Send us an Email
+                Let&apos;s Connect
               </a>
               
             </div>
@@ -638,6 +701,15 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     Facebook
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://wa.me/23491014150476"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Whatsapp
                   </a>
                 </li>
                 <li>
