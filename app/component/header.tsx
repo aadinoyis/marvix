@@ -35,7 +35,7 @@ export default function Header() {
               <li><a href="#contact">Contact</a></li>
               <li>
                 <a
-                  href="https://wa.me/23491014150476"
+                  href="https://wa.me/2349014150476"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.secondary}

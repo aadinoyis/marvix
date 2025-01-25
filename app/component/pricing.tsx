@@ -17,12 +17,13 @@ type ServiceCategory = {
 };
 
 type Props = {
+  cta: string;
   icon: string;
   service: ServiceCategory;
   id: string;
 }
 
-export default function Pricing({ icon, service, id }: Props) {
+export default function Pricing({ cta, icon, service, id }: Props) {
   return (
     <div className={styles.package} id="pricing">
       <div className={styles.package_title}>
@@ -60,10 +61,24 @@ export default function Pricing({ icon, service, id }: Props) {
                   </li>
                 ))}
               </ul>
+              
             </div>
           ))
         }
       </div>
+      <a
+                  href={cta}
+                  className={styles.secondary}
+                >
+                  <Image
+                    aria-hidden
+                    src="/globe-pointer.svg"
+                    alt="Globe icon"
+                    width={16}
+                    height={16}
+                  />
+                  Get started
+                </a>
     </div>
   );
 }

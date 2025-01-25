@@ -68,31 +68,31 @@ const solutions = [
   {
     title: "Content Creation & Strategy",
     content: "At Marvix Digital Agency, we craft compelling content that resonates with your audience. Whether it's through thought-leadership blogs, engaging content, or high-converting copy, we deliver the content that drives results.",
-    cta: "https://wa.me/23491014150476",
+    cta: "https://wa.me/2349014150476?text=Hi Marvix, I am interested in Content Creation and Strategy",
     img: "/signature.svg",
   },
   {
     title: "Branding & Graphic Design",
     content: "Your brand identity is more than just a logo. It’s the voice, personality, and trust that connects you with your customers. Let us help you define your brand with a stunning visual identity.",
-    cta: "https://wa.me/23491014150476",
+    cta: "https://wa.me/2349014150476?text=Hi Marvix, I am interested in Branding and Graphic Design",
     img: "/layers.svg",
   },
   {
     title: "Email Marketing & Automation",
     content: "Engage your audience with personalized email campaigns that drive action. From nurturing leads to retaining customers, we ensure your emails are impactful and effective.",
-    cta: "https://wa.me/23491014150476",
+    cta: "https://wa.me/2349014150476?text=Hi Marvix, I am interested in Email Marketing and Automation",
     img: "/at.svg",
   },
   {
     title: "Pay-Per-Click Advertising",
     content: "Reach your ideal customers with laser-focused PPC campaigns. Whether you’re promoting a new product or growing your brand, our ads deliver measurable results that align with your goals.",
-    cta: "https://wa.me/23491014150476",
+    cta: "https://wa.me/2349014150476?text=Hi Marvix, I am interested in PPC Advertising and Campaigns",
     img: "/megaphone.svg"
   },
   {
     title: "Web Design & Development",
     content: "Your website is the first impression customers have of your business. We design and develop responsive, visually appealing websites that deliver great user experiences and drive conversions.",
-    cta: "https://wa.me/23491014150476",
+    cta: "https://wa.me/2349014150476?text=Hi Marvix, I am interested in Web Design and Development",
     img: "/code-editing.svg",
   },
 ]
@@ -115,7 +115,7 @@ export default function Home() {
 
           <div className={styles.ctas}>
             <a
-              href="https://wa.me/23491014150476"
+              href="https://wa.me/2349014150476"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.secondary}
@@ -210,7 +210,7 @@ export default function Home() {
 
               <div className={styles.ctas}>
                 <a
-                  href="https://wa.me/23491014150476"
+                  href="https://wa.me/2349014150476"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.secondary}
@@ -324,12 +324,38 @@ export default function Home() {
           <h1>Pick a <em>Package</em> and go for it</h1>
           <br /><br />
           <div className={styles.all_packages}>
-            <Pricing icon="/signature.svg" service={services.contentCreation} id="content_creation"/>
-            <Pricing icon="/layers.svg" service={services.brandingGraphicsDesign} id="branding_graphics_design"/>
-            <Pricing icon="/at.svg" service={services.emailMarketingAutomation} id="email_marketing_automation"/>
-            <Pricing icon="/megaphone.svg" service={services.ppcAdvertising} id="ppc_advertising"/>
-            <Pricing icon="/code-editing.svg" service={services.webDesignDevelopment} id="web_design_development"/>
-            <Pricing icon="/percentage.svg" service={services.discountsBundles} id="discounts"/>
+            <Pricing 
+              icon="/signature.svg"
+              cta="https://wa.me/2349014150476?text=Hi Marvix, I am interested in Content Creation and Strategy Service"
+              service={services.contentCreation} 
+              id="content_creation"/>
+            <Pricing
+              icon="/layers.svg" 
+              cta="https://wa.me/2349014150476?text=Hi Marvix, I am interested in Branding and Graphic Design Service"
+              service={services.brandingGraphicsDesign} 
+              id="branding_graphics_design"/>
+            <Pricing
+              icon="/at.svg"
+              cta="https://wa.me/2349014150476?text=Hi Marvix, I am interested in Email Marketing and Automation Service"
+              service={services.emailMarketingAutomation} 
+              id="email_marketing_automation"/>
+            <Pricing
+              icon="/megaphone.svg"
+              cta="https://wa.me/2349014150476?text=Hi Marvix, I am interested in PPC Advertising and Campaigns Service"
+              service={services.ppcAdvertising} 
+              id="ppc_advertising"/>
+            <Pricing 
+              icon="/code-editing.svg"
+              cta="https://wa.me/2349014150476?text=Hi Marvix, I am interested in Web Design and Development Service"
+              service={services.webDesignDevelopment} 
+              id="web_design_development"
+            />
+            <Pricing 
+              icon="/percentage.svg"
+              cta="https://wa.me/2349014150476?text=Hi Marvix, I am interested in Bundle Services"
+              service={services.discountsBundles} 
+              id="discounts"
+            />
           </div>
         </div>
 
@@ -424,7 +450,7 @@ export default function Home() {
           <div className={styles.ctas}>
             
             <a
-              href="https://wa.me/23491014150476"
+              href="https://wa.me/2349014150476"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.primary}
@@ -478,7 +504,7 @@ export default function Home() {
 
               <div className={styles.ctas}>
                 <a
-                  href="https://wa.me/23491014150476"
+                  href="https://wa.me/2349014150476"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.secondary}
@@ -591,7 +617,7 @@ export default function Home() {
 
             <div className={styles.ctas}>
               <a
-                href="https://wa.me/23491014150476"
+                href="https://wa.me/2349014150476"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.secondary}
@@ -663,7 +689,7 @@ export default function Home() {
               <br />
 
               <a
-                href="https://wa.me/23491014150476"
+                href="https://wa.me/2349014150476"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.secondary}
@@ -705,7 +731,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a 
-                    href="https://wa.me/23491014150476"
+                    href="https://wa.me/2349014150476"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
